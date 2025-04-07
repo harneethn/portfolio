@@ -25,34 +25,33 @@
             font-size: 17px;
         }
 
-        .layout {
+        .main {
             display: flex;
             flex-direction: row;
+            margin-top: 40px;
             gap: 40px;
-            padding: 40px;
-        }
-
-        .leftColumn, .rightColumn {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-        }
-
-        .leftColumn {
-            max-width: 600px;
-        }
-
-        .rightColumn {
-            max-width: 300px;
         }
 
         .box {
-            margin-bottom: 30px;
+            border: 1px solid black;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .leftBox {
+            width: 600px;
+        }
+
+        .rightBox {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
         a {
-            text-decoration: none;
             color: black;
+            text-decoration: none;
         }
 
         a:hover {
@@ -61,28 +60,26 @@
     </style>
 </head>
 <body>
-    <div class="layout">
-        <div class="leftColumn">
-            <div class="box">
-                <pre>
+    <div class="main">
+        <div class="box leftBox">
+            <pre>
 
 
- __  __     ______     ______     __   __     ______     ______     ______     __  __   
-/\ \_\ \   /\  __ \   /\  == \   /\ "-.\ \   /\  ___\   /\  ___\   /\__  _\   /\ \_\ \  
-\ \  __ \  \ \  __ \  \ \  __<   \ \ \-.  \  \ \  __\   \ \  __\   \/_/\ \/   \ \  __ \ 
- \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\\"\_\  \ \_____\  \ \_____\    \ \_\    \ \_\ \_\
-  \/_/\/_/   \/_/\/_/   \/_/ /_/   \/_/ \/_/   \/_____/   \/_____/     \/_/     \/_/\/_/
+ __  __     ______     ______     __   __     ______     ______     ______   __  __   
+/\ \_\ \   /\  __ \   /\  == \   /\ "-.\ \   /\  ___\   /\  ___\   /\__  _\ /\ \_\ \  
+\ \  __ \  \ \  __ \  \ \  __<   \ \ \-.  \  \ \  __\   \ \  __\   \/_/\ \/ \ \  __ \ 
+ \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\\"\_\  \ \_____\  \ \_____\    \ \_\  \ \_\ \_\
+  \/_/\/_/   \/_/\/_/   \/_/ /_/   \/_/ \/_/   \/_____/   \/_____/     \/_/   \/_/\/_/
 
-                </pre>
-            </div>
-            <div class="box">
-                <p>
-                    hello gamers
-                </p>
-            </div>
+            </pre>
+            <h2>About Me</h2>
+            <p>
+                Hey, I'm Harneeth — a student passionate about computer science, electrical engineering,
+                and creating things like neural networks, robots, and Chrome extensions.
+            </p>
         </div>
 
-        <div class="rightColumn">
+        <div class="rightBox">
             <div class="box">
                 <h2>Projects</h2>
                 <a href="#project1">RepeatCheck.io</a><br>
