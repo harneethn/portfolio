@@ -24,22 +24,81 @@
         pre {
             font-size: 17px;
         }
+
+        .layout {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .leftColumn, .rightColumn {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .leftColumn {
+            max-width: 600px;
+        }
+
+        .rightColumn {
+            max-width: 300px;
+        }
+
+        .box {
+            margin-bottom: 30px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
-    <h1>
-        <pre>
+    <div class="layout">
+        <div class="leftColumn">
+            <div class="box">
+                <pre>
 
 
- __  __     ______     ______     __   __     ______     ______     ______   __  __   
-/\ \_\ \   /\  __ \   /\  == \   /\ "-.\ \   /\  ___\   /\  ___\   /\__  _\ /\ \_\ \  
-\ \  __ \  \ \  __ \  \ \  __<   \ \ \-.  \  \ \  __\   \ \  __\   \/_/\ \/ \ \  __ \ 
- \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\\"\_\  \ \_____\  \ \_____\    \ \_\  \ \_\ \_\
-  \/_/\/_/   \/_/\/_/   \/_/ /_/   \/_/ \/_/   \/_____/   \/_____/     \/_/   \/_/\/_/
+ __  __     ______     ______     __   __     ______     ______     ______     __  __   
+/\ \_\ \   /\  __ \   /\  == \   /\ "-.\ \   /\  ___\   /\  ___\   /\__  _\   /\ \_\ \  
+\ \  __ \  \ \  __ \  \ \  __<   \ \ \-.  \  \ \  __\   \ \  __\   \/_/\ \/   \ \  __ \ 
+ \ \_\ \_\  \ \_\ \_\  \ \_\ \_\  \ \_\\"\_\  \ \_____\  \ \_____\    \ \_\    \ \_\ \_\
+  \/_/\/_/   \/_/\/_/   \/_/ /_/   \/_/ \/_/   \/_____/   \/_____/     \/_/     \/_/\/_/
 
+                </pre>
+            </div>
+            <div class="box">
+                <p>
+                    hello gamers
+                </p>
+            </div>
+        </div>
 
-        </pre>
-    </h1>
+        <div class="rightColumn">
+            <div class="box">
+                <h2>Projects</h2>
+                <a href="#project1">RepeatCheck.io</a><br>
+                <a href="#project2">Neural Network</a><br>
+                <a href="#project3">Mini Electric Car</a><br>
+                <a href="#project4">Pomodoro Timer</a>
+            </div>
+            <div class="box">
+                <h2>Contact</h2>
+                <a href="mailto:your@email.com">Email</a><br>
+                <a href="https://github.com/yourgithub" target="_blank">GitHub</a><br>
+                <a href="https://linkedin.com/in/yourlinkedin" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+
     <nav>
         <a href="about.html">About</a> //
         <a href="projects.html">Projects</a> //
