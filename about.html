@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Harneeth's Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #000000;
+            color: white;
+            font-family: 'DM Sans', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 120vh;
+            height: auto;
+            overflow-y: auto;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 20px 0;
+        }
+
+        .header-container {
+            max-width: 525px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+
+        .social-links {
+            margin-top: 50px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .left-links,
+        .right-links {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .left-links a,
+        .right-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .left-links a:hover {
+            color: #a9a9a9;
+        }
+
+        .hover-animate {
+            cursor: pointer;
+            transition: transform 0.075s ease, opacity 0.075s ease, filter 0.075s ease;
+        }
+
+        .hover-animate:hover {
+            transform: scale(1.2);
+        }
+
+        h1 {
+            margin-top: 150px;
+            margin-bottom: 30px;
+            font-size: 30px;
+            font-weight: normal;
+        }
+
+
+        h2 {
+            margin-top: 8px;
+            margin-bottom: 8px;
+            font-weight: normal;
+        }
+
+        .text-section {
+            width: 100%;
+            max-width: 800px;
+            padding: 0px 100px;
+            text-align: center;
+            color: #a9a9a9;
+        }
+        .text-2-section {
+            width: 100%;
+            max-width: 500px;
+            text-align: center;
+            margin-bottom: 12px;
+            color: #a9a9a9;
+        }
+        .pro-section {
+            width: 100%;
+            max-width: 550px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .tech-section {
+            width: 100%;
+            max-width: 550px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .tech-item {
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 14px;
+            background-color: #1f1f1f;
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 14px;
+            color: #ffffff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+        }
+
+        .tech-item img {
+            width: 20px;
+            height: 20px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <div class="left-links">
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="resume.com">resume</a>
+        </div>
+                <div class="right-links">
+                    <a href="mailto:harneeth2007@gmail.com" class="right-links" target="_blank" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_%282020%29.svg/2560px-Gmail_icon_%282020%29.svg.png" class="hover-animate" style="width: 25px;height: 20px; filter: grayscale(0%);"></a> 
+                    <a href="https://github.com/harneethn" class="right-links" target="_blank" ><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" class="hover-animate" style="width: 25px;height: 25px; filter: invert(100%); filter: brightness(0) invert(1);"></a> 
+                    <a href="https://www.linkedin.com/in/harneeth-natarajan-9b5731344/" class="right-links" target="_blank" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" class="hover-animate" style="width: 25px;height: 25px;"></a>
+        </div>
+    </div>
+    </header>
+    <h1>About</h1>
+    <div class="text-2-section">
+        <p>
+            I'm an 18-year-old aspiring engineer passionate about electronics, coding, and problem-solving. I try to create tech that solves real-world problems and just makes life easier.
+        </p>
+    </div>
+</body>
+</html>
